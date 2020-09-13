@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000000">
+        <title>Time Convert</title>
+        <link rel="stylesheet" href="TimeStyle.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+
+    <body>
+        <div id="cadre">
+            
+            <input type="text" id="number" placeholder="Number of weeks" onKeyPress="if (event.keyCode == 13) enter()"/>
+        
+            <div id="selecteur">
+                <p id="textExemple">Number of weeks</p>
+                <div id="cadreUnites">
+                    <div class="unites" id="weeks"><p class="textUnites" id="textWeeks">weeks</p></div>
+                    <div class="unites" id="days"><p class="textUnites" id="textDays">days</p></div>
+                    <div class="unites" id="hours"><p class="textUnites" id="textHours">hours</p></div>
+                    <div class="unites" id="minutes"><p class="textUnites" id="textMinutes">minutes</p></div>
+                </div>
+            </div>
+            <div id="fleche" title="Open the unit selector"><img id="imgFleche" src="img/fleche.png" alt="flèche"/></div>
+            <div id="cadreValeurs">
+                <div id="contourValeurs">
+                    <p id="valeurs"></p>
+                </div>
+            </div>
+        </div>
+        <script src="TimeScript.js"></script>
+    </body>
+</html>
