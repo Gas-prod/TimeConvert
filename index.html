@@ -6,6 +6,18 @@
         <title>Time Convert</title>
         <link rel="stylesheet" href="TimeStyle.css">
         <link rel="manifest" href="manifest.json">
+        <meta name="viewport" content="user-scalable=no">
+        <link rel="icon" type="image/png" sizes="512x512" href="icon/icon2.png">
+        <link rel="apple-touch-icon" href="icon/icon1.png">
+        <meta name="Description" content="Une application web qui permet de convertir les unités de temps des secondes aux semaines.">
+
+        <script>
+            window.addEventListener("load", function(){
+                if("serviceWorker" in navigator) {
+                    navigator.serviceWorker.register("/TimeConvert/sw.js");
+                };
+            })
+        </script>
     </head>
 
     <body>
@@ -22,7 +34,7 @@
                     <div class="unites" id="minutes"><p class="textUnites" id="textMinutes">minutes</p></div>
                 </div>
             </div>
-            <div id="fleche" title="Open the unit selector"><img id="imgFleche" src="img/fleche.png" alt="flèche"/></div>
+            <div id="fleche" title="Open the unit selector"><img id="imgFleche" src="img/fleche.svg" alt="flèche"/></div>
             <div id="cadreValeurs">
                 <div id="contourValeurs">
                     <p id="valeurs"></p>
