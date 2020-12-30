@@ -1,0 +1,271 @@
+*
+{
+    font-family: "roboto";
+    box-sizing: border-box;
+    color: #070707;
+}
+html, body, .cadre
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+p
+{
+    margin: 0;
+    padding: 0;
+}
+.cadre
+{
+    background-color: #ececec;
+}
+.header
+{
+    width: 100%;
+    height: 12.5%;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.select
+{
+    width: calc((100% - 30px) - (12.5vh - 60px));
+    height: 100%;
+    border: 6px solid #314cb6;
+    border-radius: 45px;
+    position: relative;
+}
+.select-arrow
+{
+    content: url(img/arrow_icon.svg);
+    position: absolute;
+    top: 37.5%; right: 0; 
+    width: 25%;
+    height: 25%;
+    pointer-events: none;
+}
+.vacation-select
+{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 45px;
+    background-color: #ffffff;
+    font-size: 2.7em;
+    padding: 30px 30px 30px 30px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.location-button
+{
+    width: calc(12.5vh - 60px);
+    height: calc(12.5vh - 60px);
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 45px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    border: 6px solid #314cb6;
+}
+.location-button:hover
+{
+    background-color: #314cb6;
+}
+.location-img
+{
+    width: 45%;
+    height: 45%;
+}
+.location-button:hover > .location-img
+{
+    content: url(img/location_icon2.svg);
+}
+.content
+{
+    width: 100%;
+    height: 87.5%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.text
+{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+}
+.timer-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    border-radius: 45px;
+    cursor: pointer;
+    border: 6px solid #314cb6;
+}
+.timer
+{
+    font-size: 4em;
+}
+.values
+{
+    margin-top: 120px;
+    width: 100%;
+}
+.values > p
+{
+    font-size: 4em;
+    margin-bottom: 60px;
+}
+.shadow
+{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: block;
+}
+.locate-block 
+{
+    position: absolute;
+    top: 32.5%; left: 5%; right: 5%; bottom: 32.5%;
+    background-color:#ececec;
+    border-radius: 45px;
+}
+.locate-block1
+{
+    border-radius: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.departement-select 
+{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ffffff;
+    border-radius: 35px;
+    overflow: hidden;
+    overflow: hidden;
+    max-height: calc(100% - 175px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 6px solid #314cb6;
+}
+.search-input
+{
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 30%;
+    font-size: 3em;
+    padding: 5%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.suggestions > div 
+{
+    padding: 5%;
+    font-size: 3em;
+    border-top: 6px solid #314cb6a2;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.suggestions > div:hover 
+{
+    background-color: #ececec;
+}
+.end-location
+{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 250px;
+    height: 85px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 3em;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #314cb6;
+}
+.end-location:hover
+{
+    background-color: #314cb6;
+    color: white;
+}
+.install-shadow
+{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: none;
+}
+.install-alert
+{
+    background-color: #ececec;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0;
+    height: 30%;
+    padding: 40px;
+}
+.install-text
+{
+    font-size: 4em;
+    width: 80%;
+}
+.dismiss-button
+{
+    bottom: 40px;
+    left: 40px;
+}
+.install-button
+{
+    bottom: 40px;
+    right: 40px;
+}
+.install-alert > button
+{
+    position: absolute;
+    background-color: white;
+    border: 6px solid  #314cb6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 3em;
+    outline: none;
+}
+.install-alert > button:hover
+{
+    background-color: #314cb6;
+    color: white;
+}
