@@ -1,0 +1,21 @@
+{
+  "name": "Time Convert",
+  "short_name": "TimeConvert",
+  "icons": [
+    {
+      "src": "/TimeConvert/icon/icon1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/TimeConvert/icon/icon2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/TimeConvert/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "lang": "fr"
+}
