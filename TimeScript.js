@@ -70,7 +70,7 @@ document.getElementById("fleche").addEventListener("click", function(){
         isOnSelect = true;
         selector.style.display="block"
         number.style.display="none";
-        cadreValeurs.style.height="0vh";
+        cadreValeurs.style.height="10%";
         fleche.style.transform="rotate(0deg)";
         fleche.title="Close the unit selector";
         cadreUnites.style.display="block";
@@ -79,7 +79,7 @@ document.getElementById("fleche").addEventListener("click", function(){
         isOnSelect = false;
         selector.style.display="none"
         number.style.display="block";
-        cadreValeurs.style.height="75vh";
+        cadreValeurs.style.height="85%";
         fleche.style.transform="rotate(180deg)";
         fleche.title="Open the unit selector";
         cadreUnites.style.display="none";
@@ -113,7 +113,7 @@ document.getElementById("weeks").addEventListener("click", function(){
     isOnSelect = false;
     selector.style.display="none";
     number.style.display="block";
-    cadreValeurs.style.height="75vh";
+    cadreValeurs.style.height="85%";
     fleche.style.transform="rotate(180deg)";
     cadreUnites.style.display="none";  
     contourValeurs.style.display="block";
@@ -134,7 +134,7 @@ document.getElementById("days").addEventListener("click", function(){
     isOnSelect = false;
     selector.style.display="none";
     number.style.display="block";
-    cadreValeurs.style.height="75vh";
+    cadreValeurs.style.height="85%";
     fleche.style.transform="rotate(180deg)";
     cadreUnites.style.display="none";  
     contourValeurs.style.display="block";
@@ -155,7 +155,7 @@ document.getElementById("hours").addEventListener("click", function(){
     isOnSelect = false;
     selector.style.display="none";
     number.style.display="block";
-    cadreValeurs.style.height="75vh";
+    cadreValeurs.style.height="85%";
     fleche.style.transform="rotate(180deg)";
     cadreUnites.style.display="none";  
     contourValeurs.style.display="block";
@@ -176,7 +176,7 @@ document.getElementById("minutes").addEventListener("click", function(){
     isOnSelect = false;
     selector.style.display="none";
     number.style.display="block";
-    cadreValeurs.style.height="75vh";
+    cadreValeurs.style.height="85%";
     fleche.style.transform="rotate(180deg)";
     cadreUnites.style.display="none";  
     contourValeurs.style.display="block";
