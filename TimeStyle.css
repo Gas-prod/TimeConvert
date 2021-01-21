@@ -5,71 +5,71 @@
 }
 html, body, #cadre
 {
-    width : 100%;
-    height : 100%;
-    margin : 0;
-    padding : 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    top : 0;
-    left : 0;
+    top: 0;
+    left: 0;
 }
 p
 {
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
 }
 #number
 {
-    border-bottom-left-radius : 5vh;
-    border-bottom-right-radius : 5vh;
-    height : 10%;
-    width : 100%;
-    padding-left : 10%;
-    padding-right : 10%;
-    background-color : rgb(0, 0, 0);
-    font-size : 3vh;
-    color : rgb(216, 216, 216);
-    border : none;
-    outline : none;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    height: 10%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(0, 0, 0);
+    font-size: 3vh;
+    color: rgb(216, 216, 216);
+    border: none;
+    outline: none;
 }
 #selecteur
 {
-    border-bottom-left-radius : 5vh;
-    border-bottom-right-radius : 5vh;
-    width : 100%;
-    height : 85%;
-    padding-left : 10%;
-    padding-right : 10%;
-    padding-top : 3vh;
-    padding-bottom : 3vh;
-    background-color : rgb(0, 0, 0);
-    display : none;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    width: 100%;
+    height: 85%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: rgb(0, 0, 0);
+    display: none;
 }
 #textExemple
 {
-    color : rgb(216, 216, 216);
-    font-size : 3vh;
+    color: rgb(216, 216, 216);
+    font-size: 3vh;
 }
 #cadreUnites
 {
-    width : 100%;
-    padding-top : 100px;
-    display : none;
+    width: 100%;
+    padding-top: 100px;
+    display: none;
 }
 .unites
 {
-    color : rgb(216, 216, 216);
-    font-size : 3vh;
-    height : 200px;
+    color: rgb(216, 216, 216);
+    font-size: 3vh;
+    height: 200px;
     width: 100%;
-    border-top : 0.2vh solid rgb(167, 167, 167);
+    border-top: 0.2vh solid rgb(167, 167, 167);
     display: flex;
     align-items: center;
     transition: background-color 0.15s;
 }
 #minutes
 {
-    border-bottom : 0.2vh solid rgb(167, 167, 167);
+    border-bottom: 0.2vh solid rgb(167, 167, 167);
 }
 .unites:hover
 {
@@ -77,10 +77,10 @@ p
 }
 #cadreValeurs
 {
-    border-top-left-radius : 5vh;
-    border-top-right-radius : 5vh;
-    height : 85%;
-    width : 100%;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    height: 85%;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     padding: 10%;
 }
@@ -88,25 +88,25 @@ p
 {
     overflow-x: hidden;
     word-wrap: break-word;
-    height : 100%;    
+    height: 100%;    
 }
 #valeurs
 {
-    color : rgb(216, 216, 216);
-    font-size : 3vh;
+    color: rgb(216, 216, 216);
+    font-size: 3vh;
 }
 #cadreFleche
 {
-    width : 100%;
-    height : 5%;
+    width: 100%;
+    height: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #imgFleche
 {
-    width : 180px;
-    transform : rotate(180deg);
+    width: 180px;
+    transform: rotate(180deg);
 }
 
 .install-shadow
@@ -118,7 +118,7 @@ p
 }
 .install-alert
 {
-    background-color: #ffffff;
+    background-color: white;
     position: absolute;
     left: 0; right: 0;
     bottom: 0;
@@ -127,34 +127,44 @@ p
 }
 .install-text
 {
-    font-size: 4em;
+    font-size: 4.5em;
+    font-family: sans-serif;
 }
 .dismiss-button
 {
     bottom: 40px;
     left: 40px;
+    background-color: white;
+    border: 6px solid  #1a73e8;
 }
 .install-button
 {
     bottom: 40px;
     right: 40px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
 }
 .install-alert > button
 {
     position: absolute;
-    background-color: white;
-    border: 7px solid  #000000;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 85px;
+    width: 310px;
+    height: 110px;
     font-size: 3em;
     outline: none;
+    transition: all 0.15s;
+    box-shadow: 0 0 10px #00000080;
 }
-.install-alert > button:hover
+.install-button:hover
 {
-    background-color: #000000;
+    background-color: #183fbe;
+}
+.dismiss-button:hover
+{
+    background-color: #1a73e8;
     color: white;
 }
